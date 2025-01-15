@@ -1,16 +1,12 @@
 ---
-title: PerformanceResourceTiming.redirectStart
+title: "PerformanceResourceTiming: redirectStart property"
+short-title: redirectStart
 slug: Web/API/PerformanceResourceTiming/redirectStart
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - Web Performance
 browser-compat: api.PerformanceResourceTiming.redirectStart
 ---
 
-{{APIRef("Performance API")}}
+{{APIRef("Performance API")}}{{AvailableInWorkers}}
 
 The **`redirectStart`** read-only property returns a {{domxref("DOMHighResTimeStamp","timestamp")}} representing the start time of the fetch which that initiates the redirect.
 
@@ -36,7 +32,7 @@ The `redirectStart` and {{domxref("PerformanceResourceTiming.redirectEnd", "redi
 const redirect = entry.redirectEnd - entry.redirectStart;
 ```
 
-Using a {{domxref("PerformanceObserver")}}:
+Example using a {{domxref("PerformanceObserver")}}, which notifies of new `resource` performance entries as they are recorded in the browser's performance timeline. Use the `buffered` option to access entries from before the observer creation.
 
 ```js
 const observer = new PerformanceObserver((list) => {
@@ -51,7 +47,7 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ type: "resource", buffered: true });
 ```
 
-Or using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
+Example using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
 
 ```js
 const resources = performance.getEntriesByType("resource");

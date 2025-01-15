@@ -1,17 +1,16 @@
 ---
 title: mask
 slug: Web/SVG/Attribute/mask
-tags:
-  - SVG
-  - SVG Attribute
-browser-compat: svg.attributes.presentation.mask
+page-type: svg-attribute
+browser-compat: svg.global_attributes.mask
 ---
 
 {{SVGRef}}
 
 The **`mask`** attribute is a presentation attribute mainly used to bind a given {{ SVGElement("mask") }} element with the element the attribute belongs to.
 
-> **Note:** As a presentation attribute {{cssxref('mask')}} can be used as a CSS property.
+> [!NOTE]
+> As a presentation attribute {{cssxref('mask')}} can be used as a CSS property.
 
 You can use this attribute with the following SVG elements:
 

@@ -1,20 +1,16 @@
 ---
-title: PerformanceResourceTiming.domainLookupEnd
+title: "PerformanceResourceTiming: domainLookupEnd property"
+short-title: domainLookupEnd
 slug: Web/API/PerformanceResourceTiming/domainLookupEnd
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - Web Performance
 browser-compat: api.PerformanceResourceTiming.domainLookupEnd
 ---
 
-{{APIRef("Performance API")}}
+{{APIRef("Performance API")}}{{AvailableInWorkers}}
 
 The **`domainLookupEnd`** read-only property returns the {{domxref("DOMHighResTimeStamp","timestamp")}} immediately after the browser finishes the domain-name lookup for the resource.
 
-If the user agent has the domain information in cache, {{domxref("PerformanceResourceTiming.domainLookupStart","domainLookupStart")}} and {{domxref("PerformanceResourceTiming.domainLookupEnd","domainLookupEnd")}} represent the times when the user agent starts and ends the domain data retrieval from the cache.
+If the user agent has the domain information in cache, {{domxref("PerformanceResourceTiming.domainLookupStart","domainLookupStart")}} and `domainLookupEnd` represent the times when the user agent starts and ends the domain data retrieval from the cache.
 
 ## Value
 
@@ -34,7 +30,7 @@ The `domainLookupEnd` and {{domxref("PerformanceResourceTiming.domainLookupStart
 const dns = entry.domainLookupEnd - entry.domainLookupStart;
 ```
 
-Using a {{domxref("PerformanceObserver")}}:
+Example using a {{domxref("PerformanceObserver")}}, which notifies of new `resource` performance entries as they are recorded in the browser's performance timeline. Use the `buffered` option to access entries from before the observer creation.
 
 ```js
 const observer = new PerformanceObserver((list) => {
@@ -49,7 +45,7 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ type: "resource", buffered: true });
 ```
 
-Or using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
+Example using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
 
 ```js
 const resources = performance.getEntriesByType("resource");

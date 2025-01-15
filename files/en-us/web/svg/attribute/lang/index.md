@@ -1,10 +1,8 @@
 ---
 title: lang
 slug: Web/SVG/Attribute/lang
-tags:
-  - SVG
-  - SVG Attribute
-browser-compat: svg.attributes.core.lang
+page-type: svg-attribute
+browser-compat: svg.global_attributes.lang
 ---
 
 {{SVGRef}}

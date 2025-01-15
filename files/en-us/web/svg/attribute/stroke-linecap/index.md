@@ -1,21 +1,19 @@
 ---
 title: stroke-linecap
 slug: Web/SVG/Attribute/stroke-linecap
-tags:
-  - SVG
-  - SVG Attribute
-browser-compat: svg.attributes.presentation.stroke-linecap
+page-type: svg-attribute
+browser-compat: svg.global_attributes.stroke-linecap
 ---
 
 {{SVGRef}}
 
 The **`stroke-linecap`** attribute is a presentation attribute defining the shape to be used at the end of open subpaths when they are stroked.
 
-> **Note:** As a presentation attribute `stroke-linecap` can be used as a CSS property.
+> [!NOTE]
+> As a presentation attribute `stroke-linecap` can be used as a CSS property. See {{cssxref('stroke-linecap')}} for more.
 
 You can use this attribute with the following SVG elements:
 
-- {{SVGElement('altGlyph')}}
 - {{SVGElement('path')}}
 - {{SVGElement('polyline')}}
 - {{SVGElement('line')}}

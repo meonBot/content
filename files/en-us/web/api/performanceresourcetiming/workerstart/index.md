@@ -1,18 +1,12 @@
 ---
-title: PerformanceResourceTiming.workerStart
+title: "PerformanceResourceTiming: workerStart property"
+short-title: workerStart
 slug: Web/API/PerformanceResourceTiming/workerStart
 page-type: web-api-instance-property
-tags:
-  - API
-  - PerformanceResourceTiming
-  - Property
-  - Reference
-  - Web Performance
-  - workerStart
 browser-compat: api.PerformanceResourceTiming.workerStart
 ---
 
-{{APIRef("Performance API")}}
+{{APIRef("Performance API")}}{{AvailableInWorkers}}
 
 The **`workerStart`** read-only property of the {{domxref("PerformanceResourceTiming")}} interface returns a
 {{domxref("DOMHighResTimeStamp")}} immediately before dispatching the {{domxref("FetchEvent")}} if a Service Worker thread is already running, or immediately before starting the Service Worker thread if it is not already running. If the resource is not intercepted by a Service Worker the property will always return 0.
@@ -35,7 +29,7 @@ The `workerStart` and {{domxref("PerformanceResourceTiming.fetchStart", "fetchSt
 const workerProcessingTime = entry.fetchStart - entry.workerStart;
 ```
 
-Using a {{domxref("PerformanceObserver")}}:
+Example using a {{domxref("PerformanceObserver")}}, which notifies of new `resource` performance entries as they are recorded in the browser's performance timeline. Use the `buffered` option to access entries from before the observer creation.
 
 ```js
 const observer = new PerformanceObserver((list) => {
@@ -43,7 +37,7 @@ const observer = new PerformanceObserver((list) => {
     const workerProcessingTime = entry.fetchStart - entry.workerStart;
     if (workerProcessingTime > 0) {
       console.log(
-        `${entry.name}: Worker processing time: ${workerProcessingTime}ms`
+        `${entry.name}: Worker processing time: ${workerProcessingTime}ms`,
       );
     }
   });
@@ -52,7 +46,7 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ type: "resource", buffered: true });
 ```
 
-Or using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
+Example using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
 
 ```js
 const resources = performance.getEntriesByType("resource");
@@ -60,7 +54,7 @@ resources.forEach((entry) => {
   const workerProcessingTime = entry.fetchStart - entry.workerStart;
   if (workerProcessingTime > 0) {
     console.log(
-      `${entry.name}: Worker processing time: ${workerProcessingTime}ms`
+      `${entry.name}: Worker processing time: ${workerProcessingTime}ms`,
     );
   }
 });

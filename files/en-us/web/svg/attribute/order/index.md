@@ -1,10 +1,7 @@
 ---
 title: order
 slug: Web/SVG/Attribute/order
-tags:
-  - Filters
-  - SVG
-  - SVG Attribute
+page-type: svg-attribute
 browser-compat: svg.elements.feConvolveMatrix.order
 ---
 
@@ -57,7 +54,7 @@ svg {
       <th scope="row">Value</th>
       <td>
         <code
-          ><a href="/en-US/docs/Web/SVG/Content_type#Number-optional-number"
+          ><a href="/en-US/docs/Web/SVG/Content_type#number-optional-number"
             >&#x3C;number-optional-number></a
           ></code
         >

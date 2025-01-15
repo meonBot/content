@@ -1,10 +1,8 @@
 ---
 title: clip-rule
 slug: Web/SVG/Attribute/clip-rule
-tags:
-  - SVG
-  - SVG Attribute
-browser-compat: svg.attributes.presentation.clip-rule
+page-type: svg-attribute
+browser-compat: svg.global_attributes.clip-rule
 ---
 
 {{SVGRef}}
@@ -76,13 +74,13 @@ As a presentation attribute, it also can be used as a property directly inside a
 
   <!-- Left: evenodd -->
   <clipPath id="emptyStar">
-    <use xlink:href="#star" clip-rule="evenodd" />
+    <use href="#star" clip-rule="evenodd" />
   </clipPath>
   <rect clip-path="url(#emptyStar)" width="50" height="90" fill="blue" />
 
   <!-- Right: nonzero -->
   <clipPath id="filledStar">
-    <use xlink:href="#star" clip-rule="nonzero" />
+    <use href="#star" clip-rule="nonzero" />
   </clipPath>
   <rect clip-path="url(#filledStar)" width="50" height="90" x="50" fill="red" />
 </svg>
@@ -94,7 +92,11 @@ As a presentation attribute, it also can be used as a property directly inside a
 
 The following elements can use the `clip-rule` attribute, but only if they are inside a {{ SVGElement("clipPath") }} element.
 
-- [Graphical elements](/en-US/docs/Web/SVG/Element#graphical) »
+- [Graphics elements](/en-US/docs/Web/SVG/Element#graphics_elements)
+
+## Specifications
+
+{{Specifications}}
 
 ## Browser compatibility
 
@@ -103,3 +105,4 @@ The following elements can use the `clip-rule` attribute, but only if they are i
 ## See also
 
 - {{ SVGElement("clipPath") }}
+- CSS {{cssxref("clip-rule")}} property

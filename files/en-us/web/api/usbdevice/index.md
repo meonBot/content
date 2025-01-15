@@ -2,18 +2,12 @@
 title: USBDevice
 slug: Web/API/USBDevice
 page-type: web-api-interface
-tags:
-  - API
-  - Interface
-  - Reference
-  - USBDevice
-  - WebUSB
-  - WebUSB API
-  - Experimental
+status:
+  - experimental
 browser-compat: api.USBDevice
 ---
 
-{{SeeCompatTable}}{{APIRef("WebUSB API")}}
+{{APIRef("WebUSB API")}}{{SeeCompatTable}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
 The **`USBDevice`** interface of the [WebUSB API](/en-US/docs/Web/API/WebUSB_API) provides access to metadata about a paired USB device and methods for controlling it.
 
@@ -36,7 +30,7 @@ The **`USBDevice`** interface of the [WebUSB API](/en-US/docs/Web/API/WebUSB_API
 - {{domxref("USBDevice.deviceVersionSubminor")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : The patch version number of the device in a semantic versioning scheme.
 - {{domxref("USBDevice.manufacturerName")}} {{ReadOnlyInline}} {{Experimental_Inline}}
-  - : The of the organization that manufactured the USB device.
+  - : The name of the organization that manufactured the USB device.
 - {{domxref("USBDevice.opened")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : Indicates whether a session has been started with a paired USB device.
 - {{domxref("USBDevice.productId")}} {{ReadOnlyInline}} {{Experimental_Inline}}
@@ -52,7 +46,7 @@ The **`USBDevice`** interface of the [WebUSB API](/en-US/docs/Web/API/WebUSB_API
 - {{domxref("USBDevice.usbVersionSubminor")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : One of three properties that declare the USB protocol version supported by the device. The other two properties are `USBDevice.usbVersionMajor` and `USBDevice.usbVersionMinor`.
 - {{domxref("USBDevice.vendorId")}} {{ReadOnlyInline}} {{Experimental_Inline}}
-  - : The official usg.org-assigned vendor ID.
+  - : The official usb.org-assigned vendor ID.
 
 ## Instance methods
 

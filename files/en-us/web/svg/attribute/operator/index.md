@@ -1,11 +1,7 @@
 ---
 title: operator
 slug: Web/SVG/Attribute/operator
-tags:
-  - Filters
-  - NeedsCompatTable
-  - SVG
-  - SVG Attribute
+page-type: svg-attribute
 spec-urls:
   - https://drafts.fxtf.org/filter-effects/#element-attrdef-femorphology-operator
   - https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-operator
@@ -27,7 +23,10 @@ html,
 body,
 svg {
   height: 100%;
-  font: 20px Arial, Helvetica, sans-serif;
+  font:
+    20px Arial,
+    Helvetica,
+    sans-serif;
 }
 ```
 

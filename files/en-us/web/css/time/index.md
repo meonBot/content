@@ -2,13 +2,6 @@
 title: <time>
 slug: Web/CSS/time
 page-type: css-type
-tags:
-  - CSS
-  - CSS Data Type
-  - Data Type
-  - Layout
-  - Reference
-  - Web
 browser-compat: css.types.time
 ---
 
@@ -20,7 +13,8 @@ The **`<time>`** [CSS](/en-US/docs/Web/CSS) [data type](/en-US/docs/Web/CSS/CSS_
 
 The `<time>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by one of the units listed below. Optionally, it may be preceded by a single `+` or `-` sign. As with all dimensions, there is no space between the unit literal and the number.
 
-> **Note:** Although the number `0` is always the same regardless of unit, the unit may not be omitted. In other words, `0` is invalid and does not represent `0s` or `0ms`.
+> [!NOTE]
+> Although the number `0` is always the same regardless of unit, the unit may not be omitted. In other words, `0` is invalid and does not represent `0s` or `0ms`.
 
 ### Units
 
@@ -29,19 +23,20 @@ The `<time>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by o
 - `ms`
   - : Represents a time in milliseconds. Examples: `0ms`, `150.25ms`, `-60000ms`.
 
-> **Note:** Conversion between `s` and `ms` follows the logical `1s` = `1000ms`.
+> [!NOTE]
+> Conversion between `s` and `ms` follows the logical `1s` = `1000ms`.
 
 ## Examples
 
 ### Valid times
 
 ```plain example-good
-    12s         Positive integer
-    -456ms      Negative integer
-    4.3ms       Non-integer
-    14mS        The unit is case-insensitive, although capital letters are not recommended.
-    +0s         Zero with a leading + and a unit
-    -0ms        Zero with a leading - and a unit
+12s         Positive integer
+-456ms      Negative integer
+4.3ms       Non-integer
+14mS        The unit is case-insensitive, although capital letters are not recommended.
++0s         Zero with a leading + and a unit
+-0ms        Zero with a leading - and a unit
 ```
 
 ### Invalid times

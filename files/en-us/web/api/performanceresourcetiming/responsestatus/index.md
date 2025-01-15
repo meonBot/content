@@ -1,17 +1,12 @@
 ---
-title: PerformanceResourceTiming.responseStatus
+title: "PerformanceResourceTiming: responseStatus property"
+short-title: responseStatus
 slug: Web/API/PerformanceResourceTiming/responseStatus
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - Web Performance
-  - Experimental
 browser-compat: api.PerformanceResourceTiming.responseStatus
 ---
 
-{{APIRef("Performance API")}} {{SeeCompatTable}}
+{{APIRef("Performance API")}}{{AvailableInWorkers}}
 
 The **`responseStatus`** read-only property represents the HTTP response status code returned when fetching the resource.
 
@@ -31,7 +26,7 @@ The `responseStatus` property can have the following values:
 
 The `responseStatus` property can be used to check for cached resources with a {{HTTPStatus("304")}} `Not Modified` response status code.
 
-Using a {{domxref("PerformanceObserver")}}:
+Example using a {{domxref("PerformanceObserver")}}, which notifies of new `resource` performance entries as they are recorded in the browser's performance timeline. Use the `buffered` option to access entries from before the observer creation.
 
 ```js
 const observer = new PerformanceObserver((list) => {
@@ -45,7 +40,7 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ type: "resource", buffered: true });
 ```
 
-Or using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
+Example using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
 
 ```js
 const resources = performance.getEntriesByType("resource");

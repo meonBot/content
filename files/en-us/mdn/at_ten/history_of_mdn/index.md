@@ -1,9 +1,7 @@
 ---
 title: The history of MDN
 slug: MDN/At_ten/History_of_MDN
-tags:
-  - History
-  - MDN Meta
+page-type: guide
 ---
 
 {{MDNSidebar}}
@@ -17,7 +15,7 @@ In this talk from 2015, several contributors of the MDN project look at the past
 </pre><pre class="brush: css hidden">body{margin-top:8px;}
 </pre></div>
 
-{{ EmbedLiveSample('audio', '100%', '70px', '', '', 'no-buttons') }}
+{{ EmbedLiveSample('audio', '100%', '70px') }}
 
 ![The Berlin Office](11073502_781006205281080_8135317797319228200_o-600x400.jpg)
 
@@ -67,7 +65,7 @@ In August 2008, the Mozilla Developer Center switched to [MindTouch DekiWiki](ht
 
 Time: _0:26:08 - 0:31:50_ and _0:43:52 - 0:51:35_
 
-[Kuma](https://github.com/mdn/kuma), forked from [Kitsune](https://github.com/mozilla/kitsune) in early 2011 and launched on August 3, 2012, is a Mozilla-built wiki platform based on Django with its own [KumaScript](/en-US/docs/MDN/Tools/KumaScript) macro system which uses Node.js.
+[Kuma](https://github.com/mdn/kuma), forked from [Kitsune](https://github.com/mozilla/kitsune) in early 2011 and launched on August 3, 2012, is a Mozilla-built wiki platform based on Django with its own [KumaScript](https://github.com/mdn/yari/tree/main/docs/kumascript) macro system which uses Node.js.
 
 With the code living on GitHub, the community started to contribute to MDN's CMS as well. From now on, hacking on MDN includes both writing documentation and Kuma coding.
 
@@ -77,7 +75,7 @@ With the code living on GitHub, the community started to contribute to MDN's CMS
 
 Time: _0:31:50 - 0:32:22_ and _0:51:35 - 0:58:05_
 
-The redesign of MDN was a big project. [Sean Martell](https://twitter.com/mart3ll) designed the new MDN visual identity. It was then an iterative process with a beta user group of 3000 MDNers during several months. The new look was behind a "Waffle flag" (MDN's feature flag system). Major shout-outs also to [David Walsh](https://twitter.com/davidwalshblog/) who was really championing the entire redesign and gave MDN the front-end that it deserves.
+The redesign of MDN was a big project. [Sean Martell](https://www.seanmartell.com/) designed the new MDN visual identity. It was then an iterative process with a beta user group of 3000 MDNers during several months. The new look was behind a "Waffle flag" (MDN's feature flag system). Major shout-outs also to [David Walsh](https://davidwalsh.name/) who was really championing the entire redesign and gave MDN the front-end that it deserves.
 
 ![Waffle flag](waffle-flag.jpg)
 
@@ -93,13 +91,13 @@ Different browser vendors have joined every once in a while to help shape this p
 
 Time: _0:36:55 - 0:43:52_
 
-Localization is a big part of the Mozilla community; it is a component of almost every project and product. Using Kuma, MDN is also very localizable and suited for the needs of [our l10n community](/en-US/docs/MDN/Contribute/Localize). The W3C specifications and other resources describing the Web's functionality have no direct goals, and have communities that provide specs in multiple languages. Especially for beginners, MDN is the first step to explore web technologies, so it's our aim to be there for everyone. MDN has a broad audience and aims to include not only native English speakers. It is appreciated all around the globe.
+Localization is a big part of the Mozilla community; it is a component of almost every project and product. Using Kuma, MDN is also very localizable and suited for the needs of [our l10n community](/en-US/docs/MDN/Community/Contributing/Translated_content). The W3C specifications and other resources describing the Web's functionality have no direct goals, and have communities that provide specs in multiple languages. Especially for beginners, MDN is the first step to explore web technologies, so it's our aim to be there for everyone. MDN has a broad audience and aims to include not only native English speakers. It is appreciated all around the globe.
 
 ### Learning Area
 
 Time: _0:58:05 - 1:02:46_
 
-The MDN [Learning Area](/en-US/docs/Learn) is a new effort to teach basic web skills. Over the last 10 years, MDN added a lot of advanced material, serving experts with valuable information. This project is focused on materials for beginners, and tries to fill in a lot of knowledge gaps.
+The MDN [Learning Area](/en-US/docs/Learn_web_development) is a new effort to teach basic web skills. Over the last 10 years, MDN added a lot of advanced material, serving experts with valuable information. This project is focused on materials for beginners, and tries to fill in a lot of knowledge gaps.
 
 ### The future of MDN<br>What will be different when we celebrate 20 years of MDN?
 
@@ -121,61 +119,61 @@ These are the people who are sharing their memories and thoughts, in the order t
 
 ![Justin Crawford](hoosteeno.jpg)
 
-Justin moderates this talk and makes things with code, words, bike parts, and lumber. He is [@hoosteeno](https://twitter.com/hoosteeno) on Twitter.
+Justin moderates this talk and makes things with code, words, bike parts, and lumber. He is [@hoosteeno](https://mastodon.social/@hoosteeno) on Mastodon.social.
 
 ### Eric "Sheppy" Shepherd<br>Technical Writer, MDN
 
 ![Eric Shepherd](a2sheppy.png)
 
-Sheppy has been here documenting for Mozilla since 2006, and has a lot of history (and crazy ideas) when it comes to MDC and MDN over the years. He is [@sheppy](https://twitter.com/sheppy) on Twitter.
+Sheppy has been here documenting for Mozilla since 2006, and has a lot of history (and crazy ideas) when it comes to MDC and MDN over the years. He is [@sheppy](https://x.com/sheppy) on X.
 
 ### Jérémie Patonnier<br>Technical Writer, MDN
 
 ![Jérémie Patonnier](jeremiepat.jpg)
 
-Jérémie is a long time contributor to the Mozilla Developer Network, and a professional web developer since 2000. He's advocating web standards and write documentation about web technologies with the will to make them accessible to everybody. He is [@JeremiePat](https://twitter.com/JeremiePat) on Twitter.
+Jérémie is a long time contributor to the Mozilla Developer Network, and a professional web developer since 2000. He's advocating web standards and write documentation about web technologies with the will to make them accessible to everybody. He is [@JeremiePat](https://github.com/JeremiePat) on GitHub.
 
 ### Janet Swisher<br>Community Manager, MDN
 
 ![Janet Swisher](jmswisher.jpg)
 
-Janet is a Mozilla Community Manager for Mozilla Developer Network. She joined Mozilla in 2010, and has been involved in open source software since 2004 and in technical communication since the 20th century. She is [@jmswisher](https://twitter.com/jmswisher) on Twitter.
+Janet is a Mozilla Community Manager for Mozilla Developer Network. She joined Mozilla in 2010, and has been involved in open source software since 2004 and in technical communication since the 20th century. She is [@jmswisher](https://mastodon.social/@jmswisher) on Mastodon.social.
 
 ### Stormy Peters
 
 ![Stormy Peters](yaacgvya.jpg)
 
-Stormy is [@storming](https://twitter.com/storming) on Twitter.
+You can find Stormy at [StormysCorner.com](https://stormyscorner.com/).
 
 ### Ali Spivak<br>Herder of awesome MDN cats
 
 ![Ali Spivak](iyqi3qpv.jpg)
 
-Ali Spivak manages content & community on the Mozilla Developer Network and spends her time thinking of ways to help make the Web even more awesome. She is passionate about maintaining a free and open Web, and, after jumping into open source when she joined Mozilla in 2012, has focused on building and participating in the developer communities at Mozilla. She is [@alispivak](https://twitter.com/alispivak) on Twitter.
+Ali Spivak manages content & community on the Mozilla Developer Network and spends her time thinking of ways to help make the Web even more awesome. She is passionate about maintaining a free and open Web, and, after jumping into open source when she joined Mozilla in 2012, has focused on building and participating in the developer communities at Mozilla. She is [@alispivak](https://x.com/alispivak) on X.
 
 ### Jean-Yves Perrier<br>Technical Writer, MDN
 
 ![Jean-Yves Perrier](teoli2003.png)
 
-Jean-Yves has been a Technical Writer on MDN since 2010 and joined Mozilla full-time at the end of 2011. He is passionate about the open Web, with 15 years of C++ experience. He is Swiss but lives in London, UK. His Erdös number is 5 and he is [@Teoli2003](https://twitter.com/Teoli2003) on Twitter.
+Jean-Yves has been a Technical Writer on MDN since 2010 and joined Mozilla full-time at the end of 2011. He is passionate about the open Web, with 15 years of C++ experience. He is Swiss but lives in London, UK. His Erdös number is 5 and he is [@teoli2003](https://github.com/teoli2003) on GitHub.
 
 ### Florian Scholz<br>Technical Writer, MDN
 
 ![Florian Scholz](elchi3.jpg)
 
-Florian is a Technical Writer at Mozilla focused on open web technologies. He is a wiki gnome, gardening the documentation as if it were flowers, and he likes to work with the community toward the goal of documenting the Web and making it accessible to everyone. Florian is passionate about open source, he is based in Bremen, Germany, and tweets as [@floscholz](https://twitter.com/floscholz) on Twitter.
+Florian is a Technical Writer at Mozilla focused on open web technologies. He is a wiki gnome, gardening the documentation as if it were flowers, and he likes to work with the community toward the goal of documenting the Web and making it accessible to everyone. Florian is passionate about open source, he is based in Bremen, Germany, and commits as [@Elchi3](https://github.com/Elchi3) on GitHub.
 
 ### David Walsh<br>Web developer, MDN
 
 ![David Walsh](darkwing.png)
 
-Mozilla Sr. Web Developer, Front-End Engineer, MooTools Core Developer, JavaScript Fanatic, CSS Tinkerer, PHP Hacker, web and open source lover. David is [@davidwalshblog](https://twitter.com/davidwalshblog) on Twitter.
+Mozilla Sr. Web Developer, Front-End Engineer, MooTools Core Developer, JavaScript Fanatic, CSS Tinkerer, PHP Hacker, web and open source lover. David's home on the web is [davidwalsh.name](https://davidwalsh.name/).
 
 ### Luke Crouch<br>Web developer, MDN
 
 ![Luke Crouch](groovecoder.png)
 
-Luke Crouch is a home-brewer, soccer fan and web developer for Mozilla. He's been developing on the web since 1996, using Firefox since 2004, writing open source software since 2006, and joined Mozilla as the first staff MDN web dev in 2010. Luke is [@groovecoder](https://twitter.com/groovecoder) on Twitter.
+Luke Crouch is a home-brewer, soccer fan and web developer for Mozilla. He's been developing on the web since 1996, using Firefox since 2004, writing open source software since 2006, and joined Mozilla as the first staff MDN web dev in 2010. Luke is [@groovecoder](https://github.com/groovecoder) on GitHub.
 
 ### Julien (a.k.a. Sphinx)<br>French localization, MDN
 

@@ -1,16 +1,12 @@
 ---
-title: PerformanceResourceTiming.domainLookupStart
+title: "PerformanceResourceTiming: domainLookupStart property"
+short-title: domainLookupStart
 slug: Web/API/PerformanceResourceTiming/domainLookupStart
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - Web Performance
 browser-compat: api.PerformanceResourceTiming.domainLookupStart
 ---
 
-{{APIRef("Performance API")}}
+{{APIRef("Performance API")}}{{AvailableInWorkers}}
 
 The **`domainLookupStart`** read-only property returns the {{domxref("DOMHighResTimeStamp","timestamp")}} immediately before the browser starts the domain name lookup for the resource.
 
@@ -32,7 +28,7 @@ The `domainLookupStart` and {{domxref("PerformanceResourceTiming.domainLookupEnd
 const dns = entry.domainLookupEnd - entry.domainLookupStart;
 ```
 
-Using a {{domxref("PerformanceObserver")}}:
+Example using a {{domxref("PerformanceObserver")}}, which notifies of new `resource` performance entries as they are recorded in the browser's performance timeline. Use the `buffered` option to access entries from before the observer creation.
 
 ```js
 const observer = new PerformanceObserver((list) => {
@@ -47,7 +43,7 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ type: "resource", buffered: true });
 ```
 
-Or using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
+Example using {{domxref("Performance.getEntriesByType()")}}, which only shows `resource` performance entries present in the browser's performance timeline at the time you call this method:
 
 ```js
 const resources = performance.getEntriesByType("resource");
